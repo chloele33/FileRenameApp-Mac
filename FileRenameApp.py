@@ -10,7 +10,7 @@ from PyQt5.QtGui import *
 
 class PopUp (QWidget):
     def __init__(self, message):
-        super(PopUp, self).__init__()
+        super().__init__()
         self.resize(QSize(100, 100))
         self.setWindowFlags(Qt.WindowStaysOnTopHint)
         #widget
@@ -36,7 +36,7 @@ class PopUp (QWidget):
 
 class Rename(QWidget):
     def __init__(self):
-        super(Rename,self).__init__()
+        super().__init__()
         self.resize(QSize(650,600))
         # Create widgets     
         pathLabel=QLabel("Path:")
