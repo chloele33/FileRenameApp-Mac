@@ -1,0 +1,104 @@
+QWidget
+{
+	background : rgb(245, 250, 255);
+}
+
+QPushButton 
+{
+	height: 1.5em;
+	width: 50px;
+	background : qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(255, 255, 255), stop:1 rgb(205, 211, 220));
+	border:3px groove rgb(200, 200, 200);
+	border-radius:5px;
+	padding:3px 5px;
+	font-size: 12px;
+}
+
+QPushButton:hover
+{
+	background: rgb(255, 255, 255);
+}
+
+QPushButton:pressed
+{
+    background : rgb(11, 12, 13);
+    padding-top : -0.7px;
+    color: rgb(255, 255, 255);
+}
+
+QPushButton#pathButton
+{
+	width: 50px;
+	height: 1em;
+	border:2px groove rgb(200, 200, 200);
+}
+
+QLabel
+{
+	font: bold;
+	font-size: 14px;
+}
+
+QLabel#popUpMessage
+{
+	font: normal;
+}
+
+QLineEdit
+{
+	background: rgba(255, 255, 255, 200);
+	border:2px groove rgb(200, 200, 200);
+	border-radius:5px;	
+}
+
+QSpinBox
+{
+	background: rgba(255, 255, 255, 200);
+	border:2px groove rgb(200, 200, 200);
+	border-radius:5px;	
+	selection-background-color:rgb(100, 100, 100);
+}
+
+QSpinBox:up-arrow
+{
+
+	width: 12px;
+	height: 20px;
+	image: url("up.png");	
+}
+
+QSpinBox:down-arrow
+{
+	image: url("down.png");
+	width: 12px;
+	height: 20px;	
+}
+
+
+QTableWidget
+{
+	background: rgba(255, 255, 255, 255);
+	border:2px groove rgb(200, 200, 200);
+	border-radius:5px;
+	alternate-background-color:rgb(211, 211, 211);
+	selection-background-color:rgb(100, 100, 100);
+	selection-color: rgb(255, 255, 255);
+	gridline-color: rgb(209, 211, 220);
+}
+
+QTableWidget:item:hover
+{
+	background:rgb(248, 250, 255);
+}
+
+QTableWidget:item:selected
+{
+	background:rgb(150, 187, 247);
+}
+
+
+QTabWidget:tab-bar
+{
+	alignment: center;
+}
+

@@ -1,0 +1,40 @@
+1. Enter the desired path by clicking "Edit" and finding the directory
+
+I.For Renaming
+	1. select one or many files you wish to rename (selections must be made in order)
+	2. enter the name, format, check whether or not it is a Houdini file
+	3. enter the start number, step size , and bits(how many digits you wish the number to contain)
+	4. click Rename
+	
+II. For making copies
+	1. This program only makes copies of one file at a time, so it considers the first file you have selected
+	2. enter the name, format, check whether or not it is a Houdini file
+	3. enter how many copies you wish to make
+	4. enter the start number, step size , and bits(how many digits you wish the number to contain)
+	5. click Copy
+
+III. To reset all entries and clear selections, click Reset
+
+IV. To Open the current directory in the path bar, click open
+
+
+
+
+1.  点击‘Edit’选择与输入路径
+
+I. 重命名
+	1.选择一个或多个文件（要按顺序做选择）
+	2.输入新的文件名（new name），格式（file format），选择是否是Houdini文件
+	3.输入第一个数（start number），跳几个数（step size），跟数位（bits）
+	4.点击 Rename
+
+II. 拷贝
+	1.选择一个文件（如果选了多个文件，此程序会拷贝第一个被选文件）
+	2.输入新的文件名（new name），格式（file format），选择是否是Houdini文件
+	3.输入拷贝份树（copy number）
+	4.输入第一个数（start number），跳几个数（step size），跟数位（bits）
+	5.点击 Copy
+
+III. 重置选项与输入，点击 ‘Reset’ 
+
+IV. 打开路径，点击‘Open'
