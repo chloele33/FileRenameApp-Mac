@@ -16,25 +16,3 @@ II. For making copies
 III. To reset all entries and clear selections, click Reset
 
 IV. To Open the current directory in the path bar, click open
-
-
-
-
-1.  点击‘Edit’选择与输入路径
-
-I. 重命名
-	1.选择一个或多个文件（要按顺序做选择）
-	2.输入新的文件名（new name），格式（file format），选择是否是Houdini文件
-	3.输入第一个数（start number），跳几个数（step size），跟数位（bits）
-	4.点击 Rename
-
-II. 拷贝
-	1.选择一个文件（如果选了多个文件，此程序会拷贝第一个被选文件）
-	2.输入新的文件名（new name），格式（file format），选择是否是Houdini文件
-	3.输入拷贝份树（copy number）
-	4.输入第一个数（start number），跳几个数（step size），跟数位（bits）
-	5.点击 Copy
-
-III. 重置选项与输入，点击 ‘Reset’ 
-
-IV. 打开路径，点击‘Open'

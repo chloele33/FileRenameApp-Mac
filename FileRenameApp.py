@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import sys,os, shutil
+import sys, os, shutil, subprocess
 from PyQt5 import QtCore, QtGui, QtWidgets, Qt
 from PyQt5.Qt import *
 from PyQt5.QtWidgets import QApplication, QWidget
@@ -181,7 +181,9 @@ class Rename(QWidget):
                 return
             self.refreshTable()
     def helpBtnFunc(self):
-        os.open(self.helpPath)
+        opener ="open" if sys.platform == "darwin" else "xdg-open"
+        subprocess.call([opener, self.helpPath])
+        #os.open(self.helpPath)
     def copyBtnFunc(self):
         if not self.tableWidget.selectedIndexes(): 
             self.noSelectedPopUp.show()
@@ -313,7 +315,9 @@ class Rename(QWidget):
             self.noPathPopUp.show()
             return
         #os.startfile(oriPath)
-        os.popen(oriPath)
+        #os.popen(oriPath)
+        opener ="open" if sys.platform == "darwin" else "xdg-open"
+        subprocess.call([opener, oriPath])
     def refreshTable(self):
         curPath=str(self.pathEdit.text())
         if not curPath:return
@@ -322,7 +326,7 @@ class Rename(QWidget):
         curFiles=[item for item in os.listdir(curPath.replace("\\", "/"))]
         if not curFiles:return
         rowCount=len(curFiles)
-        self.tableWidget.setRowCount(rowCount)
+        #self.tableWidget.setRowCount(rowCount)
         fileList=[]
         #Fill original names
         for row in range(rowCount):
@@ -345,6 +349,7 @@ class Rename(QWidget):
                 fileIcon=QIcon(iconProvider.icon(fileInfor))
                 iconLabel.setPixmap(QPixmap(fileIcon.pixmap(QSize(18,18))))
                 fileList.append(rowWidget)
+        self.tableWidget.setRowCount(len(fileList))
         if fileList:
             i=0
             for i,item in enumerate(fileList):
